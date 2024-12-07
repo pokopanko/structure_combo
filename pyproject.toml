@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "nas-auto-reserve"
+version = "0.1.0"
+description = ""
+authors = [""]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+ignore = [
+  "E203", # Whitespace before ':' (E203)
+  "E501", # Line too long (82 &gt; 79 characters) (E501)
+  "F811", # Redefinition of unused name from line n (F811)
+  "E741", # Do not define classes named 'I', 'O', or 'l' (E742)
+  "E266", # too many leading '#' for block comment (E266)
+  "PIE",  # flake8-pie (PIE)
+  "F601", # multi-value-repeated-key-literal (F601)
+  "E721", # type-comparison (E721)
+]
